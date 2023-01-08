@@ -144,7 +144,7 @@ body {
 .header__burger-active {
   position: fixed;
   top: 35px;
-  right: 15px;
+  right: 30px;
 }
 
 .header__burger-active span:nth-child(1) {
