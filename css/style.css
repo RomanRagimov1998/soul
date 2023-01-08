@@ -518,16 +518,16 @@ body {
   margin: 0 auto;
 }
 .java__carts {
+  padding: 20px 0px 20px 0px;
   border: 1px solid #000;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 23px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 30px;
 }
 @media (max-width: 767.98px) {
   .java__carts {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 .java__img {
@@ -590,7 +590,7 @@ body {
     height: 88px;
     position: absolute;
     top: 0;
-    right: -40px;
+    right: -50px;
     background: url("../img/design_elements/fire-icon-2.svg") no-repeat;
   }
   .java-cart:first-child::before {
